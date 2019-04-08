@@ -5,7 +5,7 @@
 # It executes a search request for the specified search term,
 # which in this case is going to be 'yoga'.
 # Sample usage:
-#   python search_yt_yogavids.py --q=yoga --max-results=25
+#   python search_yt_vids.py --q=yoga --max-results=25
 # NOTE: To use this script, you must provide a developer key obtained
 #       in the Google APIs Console. Search for "REPLACE_ME" in this code
 #       to find the correct place to provide that key..
