@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-# This script is a slightly modified example from
+# This script is a modified example from
 # https://developers.google.com/youtube/v3/docs/search/list
 # It executes a search request for the specified search term,
 # which in this case is going to be 'yoga'.
 # Sample usage:
 #   python search_yt_yogavids.py --q=yoga --max-results=25
-# NOTE: To use the sample, you must provide a developer key obtained
+# NOTE: To use this script, you must provide a developer key obtained
 #       in the Google APIs Console. Search for "REPLACE_ME" in this code
 #       to find the correct place to provide that key..
 
@@ -22,7 +22,7 @@ from googleapiclient.errors import HttpError
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = 'AIzaSyAYNY6nAMgiAv3RC-v9FB81N0GZs5HYAgo'
+DEVELOPER_KEY = 'REPLACE_ME'
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 
