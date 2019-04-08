@@ -1,5 +1,5 @@
 # Sample usage:
-#   python gen_trainingset.py data/yoga_captions.csv data/all_captions_training.txt
+#   python generate_trainingset.py data/yoga_captions.csv data/all_captions_training.txt
 
 import argparse
 import csv
