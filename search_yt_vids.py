@@ -5,7 +5,7 @@
 # It executes a search request for the specified search term,
 # which in this case is going to be 'yoga'.
 # Sample usage:
-#   python search_yt_vids.py --q=yoga --max-results=25
+#   python search_yt_vids.py data/yoga_videos.txt --q=yoga --max-results=25
 # NOTE: To use this script, you must provide a developer key obtained
 #       in the Google APIs Console. Search for "REPLACE_ME" in this code
 #       to find the correct place to provide that key..
@@ -61,7 +61,7 @@ def youtube_search(options):
         break
 
   # Save the new data into a JSON file
-  txt_file = 'yoga_videos.txt'
+  txt_file = options.output_file
   if os.path.isfile(txt_file):  # Merge two lists if file already exists
       with open(txt_file) as json_file:
           json_data = json.load(json_file)
@@ -80,6 +80,7 @@ def youtube_search(options):
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
+  parser.add_argument('output_file', help='output text file to store video metadata', type=str)
   parser.add_argument('--q', help='Search term', default='Google')
   parser.add_argument('--max-results', help='Max results', default=50)
   parser.add_argument('--type', help='Type of result', default='video')
